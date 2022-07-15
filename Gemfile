@@ -54,8 +54,8 @@ gem "bootsnap", require: false
 # Use Twilio SMS 
 gem 'twilio-ruby'
 
-# Use ruby-clock for scheduling SMS sends
-gem 'ruby-clock'
+# Use whenever for scheduling SMS sends
+gem 'whenever', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

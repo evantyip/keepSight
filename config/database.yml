@@ -21,7 +21,7 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: keepsight
-  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
+  password: <%= ENV['KEEPSIGHT_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
