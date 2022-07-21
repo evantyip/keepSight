@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "main#index"
 
-  resources :users, only: [:create]
-
-  post "/verify", to: "users#verify"
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [:create]
+      post "/verify", to: "users#verify"
+    end
+  end
+  
 end
