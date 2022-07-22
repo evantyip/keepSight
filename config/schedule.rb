@@ -17,8 +17,8 @@ set :output, "log/cron_log.log"
 #   runner "AnotherModel.prune_old_records"
 # end
 
-every '*/20 9-17 * * 1-5' do 
-  rake 'twilio_sms:sms_eye_reminder', environment => "development"
+every '*/20 10-16 * * 1-5' do 
+  rake 'twilio_sms:sms_eye_reminder'
 end
 
 # Learn more: http://github.com/javan/whenever
